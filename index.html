@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mas etiquetas HTML</title>
+    <!-- Milligram CSS -->
+    <!-- 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"> -->
+    <!-- Pico CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    /> -->
+    <!-- Water CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+    />
+  </head>
+  <body>
+    <!-- Audio -->
+    <audio controls autoplay src="./audio/batman-series-tv-.mp3"></audio>
+    <figure>
+      <img
+        src="https://phoenixnap.com/glossary/wp-content/uploads/2023/04/what-is-html.jpg"
+        alt="HTML Reference logo"
+      />
+      <figcaption>Código HTML</figcaption>
+    </figure>
+    <h1>Mas etiquetas HTML</h1>
+    <!-- Tabla de nota alumnos -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Nota</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Juan</td>
+          <td>8.5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ana</td>
+          <td>9.0</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Carlos</td>
+          <td>7.5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ana</td>
+          <td>9.0</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Details & Summary con FAQ de la universidad -->
+    <details name="FAQ" open>
+      <summary>¿Cuáles son los requisitos de ingreso?</summary>
+      <ul>
+        <li>Ser mayor de edad</li>
+        <li>Contar con un título de secundaria o bachillerato</li>
+        <li>Presentar un examen de admisión</li>
+      </ul>
+      <details>
+        <summary>¿Hasta cuando me esperan para entregar el titulo ?</summary>
+        <p>
+          La universidad espera que los estudiantes entreguen su título de
+          secundaria o bachillerato antes de la fecha límite de inscripción. Si
+          no puedes entregar el título a tiempo, comunícate con la oficina de
+          admisiones para discutir tus opciones.
+        </p>
+      </details>
+    </details>
+    <details name="FAQ">
+      <summary>¿Cuanto cuesta el curso de Desarrollo Web ?</summary>
+      <p>
+        El costo del curso de Desarrollo Web es de $500. Puedes pagar en cuotas.
+      </p>
+    </details>
+    <details name="FAQ">
+      <summary>¿Cuáles son los requisitos de egreso?</summary>
+      <ul>
+        <li>Haber aprobado todas las materias</li>
+        <li>Realizar un proyecto final</li>
+        <li>Presentar un examen de egreso</li>
+      </ul>
+    </details>
+    <!-- Pop Over: Elementos Emergentes -->
+    <section>
+      <h2>PopOvers: Son elementos que permiten mostrar info adicional</h2>
+      <button popovertarget="info-popover">Mostrar Info Adicional</button>
+
+      <div id="info-popover" popover>
+        <h3>Información Adicional</h3>
+        <p>
+          Esta es información adicional que se muestra al hacer clic en el
+          botón.
+        </p>
+        <button popovertarget="info-popover" popovertargetaction="toggle">
+          Close
+        </button>
+      </div>
+    </section>
+
+    <!-- Botones -->
+    <div>
+      <button>Guardar</button>
+      <button>Cancelar</button>
+      <button>Eliminar</button>
+    </div>
+    <!-- URL Schemes -->
+    <section>
+      <h2>URL Schemes</h2>
+      <p>
+        <a href="tel:+1134567890">Llama a la empresa</a>
+      </p>
+      <p>
+        <a href="mailto:ing.fabio.arg@gmail.com">Enviar correo</a>
+      </p>
+      <p>
+        <a
+          href="https://web.whatsapp.com/send?phone=+5491164883646&text=Hola%20estoy%20en%20la%20pagina%20web%20y%20quiero%20consultar%20por%20el%20Curso%20de:"
+        >
+          Enviar whatsapp
+        </a>
+      </p>
+    </section>
+    <!-- Mapa de nosotros -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5011.838925717891!2d-64.36272728102888!3d-23.556242124197414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941aa91f7405fe49%3A0xd2c5c08db016a544!2sCiudad%20GOTICA!5e0!3m2!1ses-419!2sar!4v1745451398603!5m2!1ses-419!2sar"
+      width="100%"
+      height="500"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <!-- Video youtube -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/wcc_h7NSukQ?si=zJk4U2Bxwzr_ElFC"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- Untref -->
+    <iframe
+      src="https://untref.edu.ar/mundountref/adios-francisco"
+      frameborder="0"
+      width="100%"
+      height="800"
+    ></iframe>
+    <!-- Google -->
+    <iframe
+      src="https://www.google.com/"
+      width="100%"
+      height="800"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
